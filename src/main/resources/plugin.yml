@@ -1,0 +1,46 @@
+name: dBans
+main: pl.d4nte.bans.BansSystem
+version: 1.0.0
+api-version: '1.20'
+author: D4NTE
+commands:
+  ban:
+    usage: /ban <nick> <powód>
+    permission: d4nte.bans.ban
+  tempban:
+    usage: /tempban <nick> <czas> <powód>
+    permission: d4nte.bans.tempban
+  unban:
+    usage: /unban <nick>
+    permission: d4nte.bans.unban
+  mute:
+    usage: /mute <nick> <czas> <powód>
+    permission: d4nte.bans.mute
+  unmute:
+    usage: /unmute <nick>
+    permission: d4nte.bans.unmute
+  kick:
+    usage: /kick <nick> <powód>
+    permission: d4nte.bans.kick
+  jail:
+    usage: /jail <nick> <czas> <id> <powód>
+    permission: d4nte.bans.jail
+  unjail:
+    usage: /unjail <nick>
+    permission: d4nte.bans.unjail
+  setjail:
+    usage: /setjail <id>
+    permission: d4nte.bans.setjail
+permissions:
+  d4nte.bans.*:
+    default: op
+    children:
+      d4nte.bans.ban: true
+      d4ntepunish.tempban: true
+      d4nte.bans.unban: true
+      d4nte.bans..mute: true
+      d4nte.bans.unmute: true
+      d4nte.bans.kick: true
+      d4nte.bans.jail: true
+      d4nte.bans.unjail: true
+      d4nte.bans.setjail: true

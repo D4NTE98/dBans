@@ -1,0 +1,32 @@
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  database: "minecraft"
+  user: "root"
+  password: "password"
+  useSSL: false
+  autoReconnect: true
+
+discord:
+  webhook_url: ""
+
+messages:
+  prefix: "&8[&cdBans&8]&r "
+  no-permission: "&c⚠ Nie masz uprawnień."
+  player-not-found: "&c⚠ Nie znaleziono gracza: &4{target}"
+  usage-error: "&c⚠ Użycie: &4{usage}"
+  ban-broadcast-temp: "&4⚠ &cGracz &4{target} &czostał tymczasowo zbanowany na okres &4{time} &cprzez administratora &4{staff} &cz powodem: &4{reason}"
+  ban-broadcast-perm: "&4⚠ &cGracz &4{target} &czostał &4permanentnie &czbanowany przez &4{staff} &cza: &4{reason}"
+  unban-broadcast: "&a⚠ Gracz &2{target} &azostał odbanowany przez &2{staff}"
+  mute-broadcast: "&6⚠ racz &e{target} &6został wyciszony na &e{time} &6przez &e{staff} &6za: &e{reason}"
+  unmute-broadcast: "&a⚠ Gracz &2{target} &azostał odciszony przez &2{staff}"
+  kick-broadcast: "&c⚠ Gracz &4{target} &czostał wyrzucony przez &4{staff} &cza: &4{reason}"
+  jail-broadcast: "&8⚠ &7Gracz &f{target} &7trafił do celi &f{id} &7na &f{time} &7przez &f{staff} &7za: &f{reason}"
+  unjail-broadcast: "&7⚠ Gracz &f{target} &7został wypuszczony z więzienia przez &f{staff}"
+  ban-screen-temp: "&cZostałeś zbanowany do: &4{until}\n&cPowód: &4{reason}\n&cAdministrator: &4{staff}"
+  ban-screen-perm: "&c⚠ Zostałeś permanentnie zbanowany\n&cPowód: &4{reason}\n&cAdministrator: &4{staff}"
+  still-jailed: "&7⚠ Nie możesz się ruszać. Jesteś uwięziony do: &f{until} &7w celi &f{id}"
+  not-jailed: "&7⚠ Ten gracz nie jest w więzieniu."
+  jail-missing: "&c⚠ Nie istnieje więzienie o id &4{id}"
+time:
+  default-tempban: "7d"
